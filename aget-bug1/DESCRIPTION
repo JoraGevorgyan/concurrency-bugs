@@ -1,7 +1,8 @@
 /****
-main thread-i mejic bolor signalnery block a arvum, 
-u ed jamanak kara mi hat signal_waiter inch vor tex inch vor data lock ani,
-heto noric main-i mejic sax thread-ery pakvum en, stacvum a en lock exats data-n tenc el kmna lock exats
+main thread-ից բոլոր սիգնալները բլոկ են արվում, 
+ու էդ ժամանակ կարա ինչ֊եր signal_waiter lock ա արել ինչ որ data ու էդ պահին բլոկ ա լինում,
+հետո main-ից բոլոր thread-երը փակվում են․
+ստացվում ա, որ էն signal_waiter-ը իրա lock արած data-ն առանց բացելու փակվեց։
 ****/
 
 +--------------------+
