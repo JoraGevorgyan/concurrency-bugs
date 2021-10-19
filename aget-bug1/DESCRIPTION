@@ -1,3 +1,8 @@
+/****
+main thread-i mejic bolor signalnery block a arvum, 
+u ed jamanak kara mi hat signal_waiter inch vor tex inch vor data lock ani,
+heto noric main-i mejic sax thread-ery pakvum en, stacvum a en lock exats data-n tenc el kmna lock exats
+****/
 
 +--------------------+
 |                    |
