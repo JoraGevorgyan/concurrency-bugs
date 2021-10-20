@@ -1,4 +1,4 @@
-
+//// the same locking problem just in this case it's with data shown by different pointers
 +--------------------+
 |                    |
 | SUMMARY            |
