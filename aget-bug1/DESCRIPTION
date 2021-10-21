@@ -1,8 +1,8 @@
 /****
-main thread-ից բոլոր սիգնալները բլոկ են արվում, 
-ու էդ ժամանակ կարա ինչ֊եր signal_waiter lock ա արել ինչ որ data ու էդ պահին բլոկ ա լինում,
-հետո main-ից բոլոր thread-երը փակվում են․
-ստացվում ա, որ էն signal_waiter-ը իրա lock արած data-ն առանց բացելու փակվեց։
+1. in if's body the main thread blocks out all signals of current process, so all signal_handler threads are waiting for unblocking their signals
+2. the "pthread_cancel(hthread)" (1)f-call will cancel a hthread, which is executing 'updateProgressBar' function
+3. before (1) f-call fflush(stdout) has been called from updateProgressBar's body, so now stdout is LOCKED
+4. after (1) f-call there's no thread to UNLOCK stdout, so we have 'dead lock' in this case
 ****/
 
 +--------------------+
