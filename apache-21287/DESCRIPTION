@@ -1,5 +1,5 @@
 /****
-it's just a simple double free
+քանի որ թրեդները սինխրոն չեն, բայց  աշխատում են նույն տվյալի հետ, առաջանում է double free - data race
 ****/
 
 
